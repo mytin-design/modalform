@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Button to open the modal login form-->
+
+<button onclick="document.getElementById('id01').style.display='block'">
+    Login
+
+</button>
+
+
+<!--The Modal-->
+
+<div id="id01" class="modal">
+    <span class="close" title="close cancelbtn Modal" 
+    onclick="document.getElementById('id01').style.display='none'">&times;</span>
+
+    <!--Modal Content-->
+
+    <form action="./action_page.php" class="modal-content animate">
+        <div class="imgcontainer">
+            <img src="./images/bossbaby.JPG" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="text" placeholder="Enter Password" name="psw" required>
+
+            <button type="button">Login</button>
+            <label>
+                <input type="checkbox" name="remember" checked>
+                Remember me
+            </label>
+        </div>
+
+        <div style="background-color: #f1f1f1;" class="container">
+            <button class="cancelbtn" type="button" onclick="document.getElementById('id01').style.display='none'" >Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
